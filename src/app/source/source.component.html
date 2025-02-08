@@ -1,0 +1,6 @@
+
+<ng-container (click)="setData(dat)"  *ngFor="let dat of ownerData">
+    <button (click)="setData(dat)" style="width: fit-content;">{{dat.id}} </button>
+</ng-container>
+
+<app-reciever2 style="position: relative;top:20px"></app-reciever2>

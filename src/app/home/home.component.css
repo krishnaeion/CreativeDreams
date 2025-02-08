@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+  .flexbox{
+display:flex;
+flex-direction: row;
+  }
+  .rainbow-text {
+    font-size: 2em;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-animation 5s infinite;
+  }
+  
+  @keyframes rainbow-animation {
+   
+    25% {
+      background: linear-gradient(90deg,yellow, green, blue, red, orange, indigo, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+    }
+    100% {
+      background: linear-gradient(90deg,blue, indigo, violet,red, orange, yellow, green,,);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+    }
+  }
+  .welcome-container {
+    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left:300px;
+    background-color: gray;
+    width: 80%;
+    height: 100vh;
+  }
+  .welcome-section {
+   
+    color:white;
+    height: 100vh;
+    
+  }
+  wrapper img {
+      height: 100vh;
+      width: 100%; 
+      object-fit: contain;
+      
+  }
+  
+  .welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn-primary {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff4e3a;
+    border-color: #ff4e3a;
+  }
+  ngb-carousel .wrapper {
+    position: relative;
+    height: 100vh;
+    padding-top: 35%; /* Keep ratio for 900x500 images */
+    width:80%
+  }
+  
+  ngb-carousel .wrapper>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .carouselcss{
+    
+  }
+  

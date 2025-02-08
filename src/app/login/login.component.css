@@ -1,0 +1,25 @@
+/* Add your styles here */
+div {
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin: 10px 0;
+}
+
+p {
+  color: red;
+  font-size: 12px;
+}

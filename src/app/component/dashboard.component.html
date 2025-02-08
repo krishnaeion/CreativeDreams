@@ -1,0 +1,20 @@
+<app-sidenav>
+    <div class="flexbox">
+    <div class="image-wrapper">
+        @for (item of dreamCatchers; track item.id) {
+            <img [src]="dreamCatchers[currentIndex].src" alt="Random first slide" class="img">
+            <span>Price:{{dreamCatchers[currentIndex].price+"Rupees"}}</span>
+            <button (click)="scrollDown()" [disabled]="currentIndex === dreamCatchers.length - 1" class="scroll"></button>
+        }
+        <button (click)="scrollUp()" [disabled]="currentIndex==0" class="scroll">
+            &#9650;
+           </button>
+           <div>
+            
+            <input [(ngModel)]="inputValue" placeholder="Type something">
+          </div>
+
+    </div>
+    </div>
+   
+    </app-sidenav>
